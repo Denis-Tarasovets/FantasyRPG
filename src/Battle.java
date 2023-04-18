@@ -28,9 +28,9 @@ public class Battle {
                 System.out.println("Turn " + turn);
                 turn += 1;
                 if (turn % 2 != 0) {
-                    isFightEnded = makeTurn(monster, player, endFightCallback);
-                } else {
                     isFightEnded = makeTurn(player, monster, endFightCallback);
+                } else {
+                    isFightEnded = makeTurn(monster, player, endFightCallback);
                 }
                 try {
                     Thread.sleep(1000);
