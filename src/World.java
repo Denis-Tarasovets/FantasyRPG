@@ -50,13 +50,8 @@ public class World {
                                                                System.out.println("You loose!");
                                                                mainMenu("3");
                                                            } else {
-                                                               try {
-                                                                   player.loot(monster);
-                                                                   System.out.println("Continue fighting? (y/n)");
-                                                                   buff.readLine();
-                                                               } catch (IOException e) {
-                                                                   e.printStackTrace();
-                                                               }
+                                                               player.loot(monster);
+                                                               System.out.println("Continue fighting? (y/n)");
                                                            }
                                                        }
                                                    });
